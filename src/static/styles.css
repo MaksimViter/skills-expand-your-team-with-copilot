@@ -30,6 +30,9 @@
   --error-light: #ffebee;
   --info: #0c5460;
   --info-light: #d1ecf1;
+  --calendar-entry-bg: #e3f2fd;
+  --calendar-entry-border: #90caf9;
+  --calendar-entry-text: #0d47a1;
 }
 
 * {
@@ -231,11 +234,11 @@ section h3 {
 .calendar-entry {
   position: absolute;
   padding: 4px;
-  background-color: #e3f2fd;
-  border: 1px solid #90caf9;
+  background-color: var(--calendar-entry-bg);
+  border: 1px solid var(--calendar-entry-border);
   border-radius: 4px;
   overflow: hidden;
-  color: #0d47a1;
+  color: var(--calendar-entry-text);
 }
 
 .calendar-entry-clickable {
